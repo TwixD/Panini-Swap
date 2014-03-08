@@ -1,5 +1,5 @@
 function init() {
-console.log("Load");
+console.log("Load init()");
 
  
 
