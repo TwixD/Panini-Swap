@@ -16,24 +16,73 @@
 	</head>
   
   <body onload="init();">
-
     <!-- ----------------------------Login---------------------------------- -->
 	<div data-role="page" id="page-login" class="type-interior" >
-	<div data-role="header" data-theme="b" data-position="fixed">
+	<div data-role="header" data-theme="b" data-position="fixed" class=".ui-header">
 		<h1>Login</h1>
 	</div>
-	<div data-role="content" id="page-content-login" class="type-content" data-theme="b" data-position="fixed">
-	<form>
+	<div data-role="content" id="page-content-login" class=".ui-content" data-theme="b"  data-fullscreen = "true">
+	<div class="logo">
+	<h1>Panini Swap</h1>
+	</div>
+	<form id="form-login">
 		<input type="text" id="user" placeholder="Usuario"/>
 		<input type="password" id="password" placeholder="Contraseña"/>
 		<input type="submit" value="Logear" id="login" />
 	</form>
 	</div>
-	<div data-role="footer" id="page-footer-login" class="type-footer" data-theme="b" data-position="fixed">
-		<a href="" id="registrarse">Regístrese</a>
+	<div data-role="footer" id="page-footer-login" class=".ui-footer" data-theme="b" data-position="fixed">
+		<a href="#page-register" data-rel="dialog" data-transition="slideup" id="registrarse">Regístrese</a>
 	</div>
 	</div>
 	<!-- ----------------------------Login---------------------------------- -->
+
+
+	<!-- ---------------------------- Home ---------------------------------- -->
+	<div data-role="page" id="page-home" class="type-interior">
+	<div data-role="header" data-theme="b" data-position="fixed" class=".ui-header">
+		<h1>Home</h1>
+	</div>
+    <div data-role="content" id="page-content-home" class=".ui-content" data-theme="b" data-position="fixed">
+    <a href="#page-login"> Regresa </a>
+	</div>
+	<div data-role="footer" id="page-footer-home" class=".ui-footer" data-theme="b" data-position="fixed">
+		
+	</div>
+	</div>
+	<!-- ---------------------------- Home ---------------------------------- -->
+
+
+	<!-- -------------------------- Register -------------------------------- -->
+	<div data-role="page" id="page-register" class="type-interior">
+	<div data-role="header" data-theme="b" data-position="fixed" class=".ui-header">
+		<h1>Registro</h1>
+	</div>
+    <div data-role="content" id="page-content-register" class=".ui-content" data-theme="b" data-position="fixed">
+
+    <form id="form-register">
+		<input type="text" id="user-register" placeholder="Usuario"/>
+		<input type="password" id="password-register" placeholder="Contraseña"/>
+		<input type="password" id="password-register2" placeholder="Contraseña"/>
+		<input type="submit" value="Registrar" id="register" />
+	</form>
+    
+	</div>
+	<div data-role="footer" id="page-footer-register" class=".ui-footer" data-theme="b" data-position="fixed">
+		
+	</div>
+	</div>
+	<!-- -------------------------- Register -------------------------------- -->
+
+
+
+
+
+    <!-- -------------------------- Popup Handler --------------------------- -->
+    <div data-role="popup" id="popup-nologin" data-theme="b">
+	<p>Usuario y/o Clave inconrrectos<p>
+    </div>
+    <!-- -------------------------- Popup Handler --------------------------- -->
 
 				
   </body>
